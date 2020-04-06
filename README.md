@@ -1,4 +1,4 @@
-# Comments Thread
+# Comment Thread
 A comment thread using Disqus.
 
 Built with:

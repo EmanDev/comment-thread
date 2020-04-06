@@ -1,5 +1,5 @@
 # Comment Thread
-A comment thread using Disqus.
+My custom comment thread using Disqus.
 
 Built with:
 - HTML

@@ -2,6 +2,9 @@
 Custom Styles by Eman Marcaida
 Repository: Comment - Thread
 */
+html {
+    scroll-behavior: smooth;
+}
 
 nav a:hover {
     color: white;
@@ -31,4 +34,8 @@ p a:hover {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#rule-content {
+    text-align: justify;
 }

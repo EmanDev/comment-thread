@@ -55,6 +55,48 @@
             </section>
         </div>
     </nav>
+    <!--Rule Modal-->
+    <div class="modal fade" id="rule-modal" tabindex="-1" role="dialog" aria-labelledby="label-rule-modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="label-rule-modal">Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="rule-content">Please follow the rules listed here. All comments are moderated closely and
+                        will be deleted
+                        automatically without notice if the comment did not abide by the rules.
+                    </p>
+                    <br>
+                    <p id="rule-content">
+                        1. Do not post malicious, harmful, and spam-related links. This includes referral links.
+                    </p>
+                    <p id="rule-content">
+                        2. No SPAM. Don't be a robot.
+                    </p>
+                    <p id="rule-content">
+                        3. No NSFW comments (Not Safe For Work).
+                    </p>
+                    <p id="rule-content">
+                        4. No witch hunting, like bullying or harass.
+                    </p>
+                    <p id="rule-content">
+                        5. No BAN evade. Mods will unban if necessary.
+                    </p>
+                    <p id="rule-content">
+                        6. Follow all the rules above.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <div id="center-style">
             <div class="row no-gutters">
@@ -65,8 +107,9 @@
                         This is a comment-thread where issues/problems could be resolve more dynamically.
                     </p>
                     <p>
-                        This system is monitored through <a href="https://disqus.com">Disqus</a>. Please follow the
-                        <a href="">rules</a> when commenting.
+                        This system is monitored through <a target="_blank" href="https://disqus.com">Disqus</a>. Please
+                        follow the
+                        <a data-toggle="modal" data-target="#rule-modal" href="">rules</a> when commenting.
                     </p>
                 </div>
             </div>

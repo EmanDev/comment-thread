@@ -25,7 +25,7 @@ p a:hover {
     color: white;
 }
 
-.comment-style-thread {
+#disqus_thread {
     background-image: url('../img/chitoge-1.png');
     background-size: cover;
     background-attachment: fixed;

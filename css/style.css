@@ -24,3 +24,15 @@ nav a:hover {
 p a:hover {
     color: white;
 }
+
+.comment-style-thread {
+    background-image: url('../img/chitoge-1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

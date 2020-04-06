@@ -12,6 +12,7 @@
     <title>Comment Thread - EmanDev</title>
     <meta name="description" content="A comment thread using Disqus.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="no-cache">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet"
@@ -28,6 +29,9 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="https://emandev.github.io/">EmanDev</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -165,6 +169,11 @@
         })
     </script>
     <script id="dsq-count-scr" src="//emandev-comment-thread.disqus.com/count.js" async></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 2500);
+    </script>
 </body>
 
 </html>

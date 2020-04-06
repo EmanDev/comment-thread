@@ -1,1 +1,122 @@
-HELLO WORLD
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Comment Thread - EmanDev</title>
+    <meta name="description" content="A comment thread using Disqus.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png"
+        href="https://lh3.googleusercontent.com/pGiA3Rkwl_HwECT7IV2ejeWQBSZ7LgVw2hhlOjuN_NlReqYzoGZZEays0fqzUpWjRiMDWao9bAeWpAs6QHPwumTHs7i5Q8pQp7UrD1M_ID_6GA0XSOZDC6aZy3NqPMej-YLpS3cjd8Y7dZBVJbQoiwMattOL4dwqS6AoZwj52F7Bhk7R8M2dKEb374JQtXZwqS8E0GwoqH-pjrrWUPnPqgoMD4DJ4yacaSjGWUSS0hnv6zSPFQ94ekG2j0OKuVPwTUPvtlykxrjujE_XBeNbyfGfX-g7qLk7XeiPkNVtHFoGGWXBSjVEorc6KHfnRoDgeWU9qz9pqABHvlOaSipxC3t4nSRMWgWyJ8c49z5Mv-K5KEyg5k1kx4NMNbHvi9absJ-xi8kMZ_XGE610qL1QtuUVt9aYgoRPgBgfzu-PjYTDwPOhCq2ijhpzFXo7C1Xl8EphpfCIcTCA59gDdvv_QVN1_lwf8xFbzY08FiKh12ckEzzrBLE2xlTVFiVw-W0E_mdMbfyzKwRLhQgfkz3My48TYp9j3KuHZNtsu1JuCGD_cQgDX1_S8zOmEAqGcuM2mN2daCdKLh2IO7I24NPW7cmKCnmyAZD1AU60f3Hl5ZhRe6ToyuicUngBJyAYCq2WlSi6VLJjo9ULUyNkrJMQyFth2XLcnkE=s96-no" />
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://emandev.github.io/">EmanDev</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--Serve empty-->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#info">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#thread">Comment Thread</a>
+                </li>
+
+            </ul>
+            <section class="form-inline my-2 my-lg-0">
+                <a data-toggle="tooltip" data-placement="left" data-title="Visit repositories"
+                    href="https://github.com/EmanDev?tab=repositories" target="_blank" class="nav-link p-2"><i
+                        class="fa fa-github"></i></a>
+                <a data-toggle="tooltip" data-placement="left" data-title="Visit YouTube Channel"
+                    href="https://www.youtube.com/channel/UCtRWt7r0ZTyp1MrHhsZxOUA?view_as=subscriber" target="_blank"
+                    class="nav-link p-2"><i class="fa fa-youtube-play"></i></a>
+            </section>
+        </div>
+    </nav>
+    <main>
+        <div id="center-style">
+            <div class="row no-gutters">
+                <div class="text-white text-center">
+                    <h1>Comment Thread</h1>
+                    <br>
+                    <p>
+                        This is a comment-thread where issues/problems could be resolve more dynamically.
+                    </p>
+                    <p>
+                        This system is monitored through <a href="https://disqus.com">Disqus</a>. Please follow the
+                        <a href="">rules</a> when commenting.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document,
+                            s = d.createElement('script');
+                        s.src = 'https://emandev-comment-thread.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        powered by Disqus.</a></noscript>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('body').bootstrapMaterialDesign();
+        });
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script id="dsq-count-scr" src="//emandev-comment-thread.disqus.com/count.js" async></script>
+</body>
+
+</html>

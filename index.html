@@ -332,7 +332,27 @@
                     "halfmoon_preferredMode") == "dark-mode") {}
         }
     </script>
-    <script src="js/Dark-Light-Switch.js"></script>
+    <script>
+        var chosenMode = Cookies.get('halfmoon_preferredMode')
+	    console.log(chosenMode)
+
+        if (chosenMode == "dark-mode"){
+            $('div#main-content').addClass('dark-wall')
+            $('div#main-content').removeClass('light-wall')
+        } else {
+            if (chosenMode == "light-mode") {
+                $('div#main-content').addClass('light-wall')
+                $('div#main-content').removeClass('dark-wall')
+            }
+        }
+
+        //switcher
+        $('button#themer').click(switchingMode);
+
+        function switchingMode(){
+            location.reload();
+        }
+    </script>
     <script id="dsq-count-scr" src="//emandev-comment-thread.disqus.com/count.js" async></script>
 </body>
 

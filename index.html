@@ -337,12 +337,14 @@
 	    console.log(chosenMode)
 
         if (chosenMode == "dark-mode"){
-            $('div#main-content').addClass('dark-wall')
+            $('div#main-content').removeClass('dark-wall')
             $('div#main-content').removeClass('light-wall')
+            $('div#main-content').addClass('dark-wall')
         } else {
             if (chosenMode == "light-mode") {
-                $('div#main-content').addClass('light-wall')
+                $('div#main-content').removeClass('light-wall')
                 $('div#main-content').removeClass('dark-wall')
+                $('div#main-content').addClass('light-wall')
             }
         }
 

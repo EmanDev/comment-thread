@@ -269,13 +269,18 @@
         <!-- content -->
         <div id="main-content" class="dark-wall content-wrapper">
             <div class="d-flex h-full text-center align-items-center justify-content-center">
-                <div class="col">
-                    <h1>Comment Thread</h1>
-                    <p>This is a comment-thread where issues/problems can be resolve dynamically compared to the comments' section of YouTube.</p>
-                    <p>This commenting system is monitored through <a target="_blank" href="https://disqus.com/">Disqus</a>. Please follow the <a href="#modal-rules">rules</a> when commenting.</p>
+                <div class="row">
+                    <div class="col">
+                        <h1>Comment Thread</h1>
+                        <p>This is a comment-thread where issues/problems can be resolve dynamically compared to the comments' section of YouTube.</p>
+                        <p>This commenting system is monitored through <a target="_blank" href="https://disqus.com/">Disqus</a>. Please follow the <a href="#modal-rules">rules</a> when commenting.</p>
+                    </div>
                 </div>
                 <br>
-                <div id="disqus_thread"></div>
+            </div>
+            <div class="container">
+                <div id="disqus_thread">
+                </div>
                 <script>
                     /**
                      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -319,7 +324,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         if (halfmoon.getPreferredMode() == "light-mode") {} else if (halfmoon.getPreferredMode() ==
-            "dark-mode") {} else if (halfmoon - getPrefferedMode() == "not-set") {}
+            "dark-mode") {} else if (halfmoon - getPreferredMode() == "not-set") {}
     </script>
     <script type="text/javascript">
         if (halfmoon.readCookie("halfmoon-preferredMode")) {

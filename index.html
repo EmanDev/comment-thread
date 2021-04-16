@@ -24,10 +24,13 @@
         * Made - 15/04/2021
         * Updated - ####
         */
+        ul {
+            list-style: none;
+        }
     </style>
 </head>
 
-<body data-set-preferred-mode-onload="true">
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars dark-mode" data-set-preferred-mode-onload="true">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -45,7 +48,7 @@
                 </button>
             </div>
             <!-- Navbar brand -->
-            <a href="index.html" class="navbar-brand">
+            <a href="https://emandev.github.io" class="navbar-brand">
                 <img src="img/emandev-optimized.png" alt="EmanDev">
                 EmanDev
             </a>
@@ -54,7 +57,7 @@
             <!-- Navbar nav -->
             <div class="form-inline d-md-flex navbar-content ml-auto">
                 <button id="themer" data-toggle="tooltip" data-title="Toggle dark mode" data-placement="left"
-                    class="btn" type="button" onclick="halfmoon.toggleDarkMode()"><i class="fas fa-moon"
+                    class="btn btn-primary" type="button" onclick="halfmoon.toggleDarkMode()"><i class="fas fa-moon"
                         aria-hidden-true></i></button>
             </div>
         </nav>
@@ -97,9 +100,9 @@
                                 href="mailto:emzzdroidlollipop@gmail.com">emzzdroidlollipop@gmail.com</a>.
                         </p>
 
-                        <div class="text-right mt-20">
+                        <div class="text-center mt-20">
                             <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
-                            <a href="#" class="btn mr-5" role="button">Close</a>
+                            <a href="#" class="btn btn-block mr-5" role="button">Close</a>
                         </div>
                 </div>
             </div>
@@ -107,29 +110,109 @@
         <!--Modal Rules-->
         <div class="modal" id="modal-rules" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <a href="#" class="close" role="button" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </a>
-                <h5 class="modal-title">Rules</h5>
-                <p>
-                  Please follow the rules listed here. All comments are moderated closely and will be deleted automatically without notice if the comment did not abide by the rules.
-                </p>
-                <br>
-                <ul style="list-style: none;">
-                    <li>1. Do not post malicious, harmful, and spam-related links. This includes referral links.</li>
-                    <li>2. Do not SPAM. Don't be a robot.</li>
-                    <li>3. No NSFW comments (Not Safe For Work / 18+).</li>
-                    <li>4. No witch hunting, like bullying or harass.</li>
-                    <li>5. No BAN evade. Mods will unban if necessary.</li>
-                    <li>6. If one rule was not followed it will result to a ban immediately.</li>
-                </ul>
-                <div class="text-right mt-20"> <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
-                  <a href="#" class="btn btn-success mr-5" role="button">Understood</a>
+                <div class="modal-content">
+                    <a href="#" class="close" role="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                    <h5 class="modal-title">Rules</h5>
+                    <p>
+                        Please follow the rules listed here. All comments are moderated closely and will be deleted
+                        automatically without notice if the comment did not abide by the rules.
+                    </p>
+                    <br>
+                    <ul>
+                        <li>1. Do not post malicious, harmful, and spam-related links. This includes referral links.
+                        </li>
+                        <li>2. Do not SPAM. Don't be a robot.</li>
+                        <li>3. No NSFW comments (Not Safe For Work / 18+).</li>
+                        <li>4. No witch hunting, like bullying or harass.</li>
+                        <li>5. No BAN evade. Mods will unban if necessary.</li>
+                        <li>6. If one rule was not followed it will result to a ban immediately.</li>
+                    </ul>
+                    <div class="text-center mt-20">
+                        <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                        <a href="#" class="btn btn-success btn-block mr-5" role="button">Understood</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+
+        <!--EmanModal-->
+        <div class="modal" id="emanModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <a href="#" class="close" role="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                    <h5 class="modal-title text-center">Eman Marcaida</h5>
+                    <br>
+                    <p class="text-center">
+                        <img style="height: auto; max-width: 100%;" src="img/emandev.png" alt="Eman Marcaida">
+                    </p>
+                    <br>
+                    <p class="text-center">
+                        Hello, I am Eman Marcaida. I like guitars and computers, and I like to create guides and
+                        tutorials for people who could not wrap their heads around the things they <b>want</b> to do 🙂
+                    </p>
+                    <div class="text-center mt-20">
+                        <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                        <a href="#" class="btn btn-primary btn-block mr-5" role="button">Okay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--EmanDev HerokuApp-->
+        <div class="modal" id="emandevherokuapp" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <a href="#" class="close" role="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                    <h5 class="modal-title">EmanDev.HerokApp</h5>
+                    <p class="text-justify">
+                        This repository does not have a dedicated website that features its content. Checkout the links
+                        below for more.
+                    </p>
+                    <br>
+                    <div class="d-flex form-inline align-items-center justify-content-center">
+                        <a data-toggle="tooltip" data-title="Open in a new tab" data-placement="bottom" target="_blank"
+                            href="https://emandev-downloads.herokuapp.com/" class="btn btn-primary"><i
+                                class="fas fa-globe"></i> Open Heroku App</a>
+                        <a data-toggle="tooltip" data-title="Check source code" data-placement="bottom" target="_blank"
+                            href="https://github.com/EmanDev/emandev-downloads" class="btn btn-primary"><i
+                                class="fas fa-code"></i> Source Code</a>
+                    </div>
+                    <div class="text-center mt-20">
+                        <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                        <a href="#" class="btn btn-block mr-5" role="button">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Photo Credits Modal-->
+        <div class="modal" id="credits" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <a href="#" class="close" role="button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                    <h5 class="modal-title">Credits</h5>
+                    <p class="text-justify">
+                        The following are credited for their work and thanked for allowing people to use their work.
+                    </p>
+                    <ul>
+                        <li>Photo by <b>Anonymous</b> on <a
+                                href="https://wallpapercave.com/w/wp5485892">Wallpapercave</a>.</li>
+                    </ul>
+                    <div class="text-center mt-20">
+                        <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                        <a href="#" class="btn btn-primary btn-block mr-5" role="button">Okay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
 
@@ -194,7 +277,7 @@
                     </span>
                     EmanDev.GitHub.Io
                 </a>
-                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                <a href="#emandevherokuapp" class="sidebar-link sidebar-link-with-icon">
                     <span class="sidebar-icon">
                         <i class="fas fa-h-square" aria-hidden="true"></i>
                     </span>
@@ -221,7 +304,7 @@
                     </span>
                     Comment Thread
                 </a>
-                <a href="#" class="sidebar-link sidebar-link-with-icon">
+                <a href="#emanModal" class="sidebar-link sidebar-link-with-icon">
                     <span class="sidebar-icon">
                         <i class="fas fa-user" aria-hidden="true"></i>
                     </span>
@@ -271,14 +354,17 @@
             <div class="d-flex h-full text-center align-items-center justify-content-center">
                 <div class="row">
                     <div class="col">
-                        <h1>Comment Thread</h1>
-                        <p>This is a comment-thread where issues/problems can be resolve dynamically compared to the comments' section of YouTube.</p>
-                        <p>This commenting system is monitored through <a target="_blank" href="https://disqus.com/">Disqus</a>. Please follow the <a href="#modal-rules">rules</a> when commenting.</p>
+                        <h1><a href="#mycomment">Comment Thread</a></h1>
+                        <p>This is a comment-thread where issues/problems can be resolve dynamically compared to the
+                            comments' section of YouTube.</p>
+                        <p>This commenting system is monitored through <a target="_blank"
+                                href="https://disqus.com/">Disqus</a>. Please follow the <a
+                                href="#modal-rules">rules</a> when commenting.</p>
                     </div>
                 </div>
                 <br>
             </div>
-            <div class="container">
+            <div id="mycomment" class="container">
                 <div id="disqus_thread">
                 </div>
                 <script>
@@ -306,7 +392,12 @@
             </div>
         </div>
 
-        <div class="navbar navbar-fixed-bottom">
+        <div class="navbar d-flex navbar-fixed-bottom">
+            <span class="navbar-text mr-auto">
+                <div>
+                    <a href="#credits">Credits</a>
+                </div>
+            </span>
             <span class="navbar-text ml-auto">
                 <div>
                     Copyright &copy; <script>
@@ -334,9 +425,9 @@
     </script>
     <script>
         var chosenMode = Cookies.get('halfmoon_preferredMode')
-	    console.log(chosenMode)
+        console.log(chosenMode)
 
-        if (chosenMode == "dark-mode"){
+        if (chosenMode == "dark-mode") {
             $('div#main-content').removeClass('dark-wall')
             $('div#main-content').removeClass('light-wall')
             $('div#main-content').addClass('dark-wall')
@@ -351,7 +442,7 @@
         //switcher
         $('button#themer').click(switchingMode);
 
-        function switchingMode(){
+        function switchingMode() {
             location.reload();
         }
     </script>

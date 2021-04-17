@@ -9,8 +9,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="cache-control" content="no-cache">
-    <title>Comment Thread - EmanDev</title>
-    <meta name="description" content="A comment thread using Disqus for emandev.github.io">
+    <title>EmanDev</title>
+    <meta name="description"
+        content="EmanDev.github.io contains posts and videos about game and windows tutorials along with certain app developments.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/halfmoon.css">
     <link rel="shortcut icon" href="img/emandev-icon.ico" type="image/x-icon">
@@ -49,7 +50,7 @@
                 </button>
             </div>
             <!-- Navbar brand -->
-            <a href="https://emandev.github.io" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="img/emandev-optimized.png" alt="EmanDev">
                 EmanDev
             </a>
@@ -57,9 +58,9 @@
             <!-- Text here -->
             <!-- Navbar nav -->
             <div class="form-inline d-md-flex navbar-content ml-auto">
-                <button id="themer" data-toggle="tooltip" data-title="Toggle dark mode" data-placement="left"
-                    class="btn btn-primary" type="button" onclick="halfmoon.toggleDarkMode()"><i class="fas fa-moon"
-                        aria-hidden-true></i></button>
+                <button id="themer" data-toggle="tooltip" data-title="Toggle Dark Mode" data-placement="left"
+                    class="btn btn-primary" type="button" onclick="halfmoon.toggleDarkMode()"
+                    aria-label="Toggle Dark Mode"><i class="fas fa-moon" aria-hidden="true"></i></button>
             </div>
         </nav>
 
@@ -101,39 +102,10 @@
                                 href="mailto:emzzdroidlollipop@gmail.com">emzzdroidlollipop@gmail.com</a>.
                         </p>
 
-                        <div class="text-center mt-20">
+                        <div class="text-center  mt-20">
                             <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
                             <a href="#" class="btn btn-block mr-5" role="button">Close</a>
                         </div>
-                </div>
-            </div>
-        </div>
-        <!--Modal Rules-->
-        <div class="modal" id="modal-rules" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <a href="#" class="close" role="button" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </a>
-                    <h5 class="modal-title">Rules</h5>
-                    <p>
-                        Please follow the rules listed here. All comments are moderated closely and will be deleted
-                        automatically without notice if the comment did not abide by the rules.
-                    </p>
-                    <br>
-                    <ul>
-                        <li>1. Do not post malicious, harmful, and spam-related links. This includes referral links.
-                        </li>
-                        <li>2. Do not SPAM. Don't be a robot.</li>
-                        <li>3. No NSFW comments (Not Safe For Work / 18+).</li>
-                        <li>4. No witch hunting, like bullying or harass.</li>
-                        <li>5. No BAN evade. Mods will unban if necessary.</li>
-                        <li>6. If one rule was not followed it will result to a ban immediately.</li>
-                    </ul>
-                    <div class="text-center mt-20">
-                        <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
-                        <a href="#" class="btn btn-success btn-block mr-5" role="button">Understood</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -204,8 +176,17 @@
                         The following are credited for their work and thanked for allowing people to use their work.
                     </p>
                     <ul>
-                        <li>Photo by <b>Anonymous</b> on <a
-                                href="https://wallpapercave.com/w/wp5485892">Wallpapercave</a>.</li>
+                        <li>1. Photo by <a
+                                href="https://unsplash.com/@itskabita?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">kabita
+                                Darlami</a> on <a
+                                href="https://unsplash.com/s/photos/desktop-setup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+                        </li>
+                        <li>2.
+                            Photo by <a
+                                href="https://unsplash.com/@melindapack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mel</a>
+                            on <a
+                                href="https://unsplash.com/s/photos/desktop-setup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+                        </li>
                     </ul>
                     <div class="text-center mt-20">
                         <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
@@ -299,7 +280,7 @@
                 <br>
                 <h5 class="sidebar-title">About & Contact</h5>
                 <div class="sidebar-divider"></div>
-                <a href="#" class="sidebar-link sidebar-link-with-icon active">
+                <a href="index.html" class="sidebar-link sidebar-link-with-icon">
                     <span class="sidebar-icon">
                         <i class="fas fa-comments" aria-hidden="true"></i>
                     </span>
@@ -351,45 +332,23 @@
         </div>
 
         <!-- content -->
-        <div id="main-content" class="dark-wall content-wrapper">
-            <div class="d-flex h-full text-center align-items-lg-center justify-content-center">
-                <div class="row">
-                    <div class="col">
-                        <h1><a href="#mycomment">Comment Thread</a></h1>
-                        <p>This is a comment-thread where issues/problems can be resolve dynamically compared to the
-                            comments' section of YouTube.</p>
-                        <p>This commenting system is monitored through <a target="_blank"
-                                href="https://disqus.com/">Disqus</a>. Please follow the <a
-                                href="#modal-rules">rules</a> when commenting.</p>
+        <div id="main-content" class="error-dark-wall content-wrapper">
+            <div class="d-flex h-full align-items-lg-center justify-content-center">
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center">ERROR: 404 😥</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="text-center">
+                                It seems like you've visited a page that is not yet available or is missing. Please go
+                                back to the previous page or go back <a href="index.html">home</a>.
+                            </h5>
+                        </div>
                     </div>
                 </div>
-                <br>
-            </div>
-            <div id="mycomment" class="container">
-                <div id="disqus_thread">
-                </div>
-                <script>
-                    /**
-                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                    /*
-                    var disqus_config = function () {
-                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                    };
-                    */
-                    (function () { // DON'T EDIT BELOW THIS LINE
-                        var d = document,
-                            s = d.createElement('script');
-                        s.src = 'https://emandev-comment-thread.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-                        powered
-                        by Disqus.</a></noscript>
-                <br>
             </div>
         </div>
 
@@ -415,13 +374,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        if (halfmoon.getPreferredMode() == "light-mode") {} else if (halfmoon.getPreferredMode() ==
-            "dark-mode") {} else if (halfmoon - getPreferredMode() == "not-set") {}
+        if (halfmoon.getPreferredMode() == "light-mode") {
+            console.log("cookie = light-mode")
+        } else if (halfmoon.getPreferredMode() == "dark-mode") {
+            console.log("cookie = dark-mode")
+        } else if (halfmoon.getPreferredMode() == "not-set") {
+            console.log("cookie is missing")
+        }
     </script>
     <script type="text/javascript">
-        if (halfmoon.readCookie("halfmoon-preferredMode")) {
-            if (halfmoon.readCookie("halfmoon_preferredMode") == "light-mode") {} else if (halfmoon.readCookie(
-                    "halfmoon_preferredMode") == "dark-mode") {}
+        // Make sure that the cookie exists
+        if (halfmoon.readCookie("halfmoon_preferredMode")) {
+            if (halfmoon.readCookie("halfmoon_preferredMode") == "light-mode") {
+                console.log("cookie said mode is light")
+            } else if (halfmoon.readCookie("halfmoon_preferredMode") == "dark-mode") {
+                console.log("cookie said mode is dark")
+            }
         }
     </script>
     <script>
@@ -429,14 +397,14 @@
         console.log(chosenMode)
 
         if (chosenMode == "dark-mode") {
-            $('div#main-content').removeClass('dark-wall')
-            $('div#main-content').removeClass('light-wall')
-            $('div#main-content').addClass('dark-wall')
+            $('div#main-content').removeClass('error-dark-wall')
+            $('div#main-content').removeClass('error-light-wall')
+            $('div#main-content').addClass('error-dark-wall')
         } else {
             if (chosenMode == "light-mode") {
-                $('div#main-content').removeClass('light-wall')
-                $('div#main-content').removeClass('dark-wall')
-                $('div#main-content').addClass('light-wall')
+                $('div#main-content').removeClass('error-light-wall')
+                $('div#main-content').removeClass('error-dark-wall')
+                $('div#main-content').addClass('error-light-wall')
             }
         }
 
@@ -447,7 +415,6 @@
             location.reload();
         }
     </script>
-    <script id="dsq-count-scr" src="//emandev-comment-thread.disqus.com/count.js" async></script>
 </body>
 
 </html>
